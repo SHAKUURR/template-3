@@ -73,7 +73,8 @@ input {
 }
 
 .email:focus,
-.password:focus {
+.password:focus,
+.number {
   outline: none;
 }
 
