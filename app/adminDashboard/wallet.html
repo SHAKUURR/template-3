@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@700&family=Plus+Jakarta+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/wallet.css" />
+    <title>My Wallet</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="side-bar">
+        <div class="side-details">
+          <div class="user-profile">
+            <p class="user-photo">PA</p>
+            <p class="user-name">Peace Adedokun</p>
+          </div>
+  
+          <ul class="user-nav">
+            <li class="nav-list">
+              <a href="#" class="nav-link">
+                <img src="../../images/dashboard2.png" class="nav-image">
+              
+                <span class="nav-item">Dashboard</span> 
+              </a           
+            </li>
+  
+            <li class="nav-list nav-active">
+              <a href="#" class="nav-link active-link">
+                <img src="../../images/Credit Card 2.png" class="nav-image">
+             
+              <span class="nav-item">Wallet</span>  
+              </a          
+            </li>
+  
+            <li class="nav-list">
+              <a href="#" class="nav-link">
+                <img src="../../images/history.png" class="nav-image">
+              
+              <span class="nav-item">Transactions</span>  
+              </a          
+            </li>
+  
+            <li class="nav-list">
+              <a href="#" class="nav-link">
+                <img src="../../images/Chart Statistics 2.png" class="nav-image">
+              
+              <span class="nav-item">Analytics</span>   
+              </a         
+            </li>
+  
+            <li class="nav-list">
+              <a href="#" class="nav-link">
+                <img src="../../images/Settings 1.png" class="nav-image">
+              
+              <span class="nav-item">Settings</span> 
+              </a           
+            </li>
+  
+            <li class="nav-list">
+              <a href="#" class="nav-link">
+                <img src="../../images/Settings 1.png" class="nav-image">
+              
+              <span class="nav-item">Developers</span> 
+              </a           
+            </li>
+               
+          </ul>
+        </div>
+       
+
+        <div class="log">
+          <a href="#" class="arrow-link"><img src="../../images/Icon.png" class="arrow"></a>
+          <span class="logout"><a href="#" class="logout-link">Logout</a></span>
+        </div>
+      </nav>
+
+      <div class="content">
+        <div class="heading">
+          <form class="search-form">
+            <input type="text" placeholder="Search for anything..." class="search-input">
+            <button class="search-button">
+              <img src="../../images/search.png" class="search-image">
+            </button>
+          </form>
+
+          <div class="notification">
+            <img src="../../images/clarity_notification-line.png" class="notify">
+
+            <img src="../../images/cil_settings.png" class="settings">
+          </div>
+        </div>
+
+      <div class="content-details">
+<!-- .................CONTENT LEFT.................. -->
+        <div class="content-left">
+          <div class="welcome">
+            <a href="#" class="back-link"><p class="back"><span class="back-arrow">	&larr;</span>Back</p></a>
+          </div>     
+          
+         
+          
+          <!-- ....TRANSACTION HISTORY.... -->
+          <div class="transaction">
+            <div class="transaction-heading">
+             <h3 class="transaction-header">Add funds to your wallet</h3>
+             <p class="transaction-paragraph">Pay with debit card or make a transfer to the bank details provided below the form.</p>
+            </div>
+
+            <div class="transfer-box">
+            <!-- DEBIT CARD -->
+            <div class="debit">
+              <h4 class="debit-header">Pay with debit card</h4>
+              <p class="debit-text">Amount</p>
+              <input type="text" class="debit-input" placeholder="Input amount">
+              <button type="submit" class="debit-submit">Continue</button>
+            </div>
+
+            <!-- BANK TRANSFER --> 
+            <div class="transfer">
+              <h3 class="transfer-heading">Pay with bank transfer</h3>
+              <div class="account-details">
+                <p class="account">Account name:</p>
+                <p class="account-name">Peace Adedokun</p>
+              </div>
+
+              <div class="account-details">
+                <p class="account">Account number:</p>
+                <p class="account-name">2738727387</p>
+              </div>
+
+              <div class="account-details">
+                <p class="account">Bank name:</p>
+                <p class="account-name">Wema Bank</p>
+              </div>
+            </div>
+            </div>
+                                 
+          </div>                
+        
+        </div>
+<!-- .................CONTENT RIGHT.................. -->
+        <div class="content-right">
+         
+
+         <!-- ..........ACTIVITY............ -->
+         <div class="activity">
+            <div class="activity-head">
+              <h4 class="activity-text">Activity</h4>
+              <select class="activity-select">
+                <option class="activity-option">Month</option>
+              </select>
+            </div>
+            <img src="../../images/activity.png" class="activity-graph">
+            <p class="activity-percent">75%</p>
+
+            <div class="activity-progress">
+              <div class="activity-report">
+                <h5 class="activity-payment">Daily payment</h5>
+                <p class="activity-per">55%</p>
+              </div>
+
+              <div class="activity-report">
+                <h5 class="activity-hobby">Hobby</h5>
+                <p class="activity-per">20%</p>
+              </div>
+            </div>
+            <button type="submit" class="activity-btn">View all activity <span class="activity-arrow">&#8594;</span>
+            </button>
+         </div>
+        </div>
+  
+      </div>
+
+     
+      </div>
+    </header>
+  </body>
+</html>
