@@ -178,8 +178,8 @@ input,
   flex-direction: column;
   justify-content: center; */
 
-	margin-right: 10rem;
-	flex: 0 0 50%;
+	margin-right: 3rem;
+	flex: 0 0 58%;
 }
 
 .welcome {
@@ -204,20 +204,9 @@ input,
 .transaction {
 	background-color: #fff;
 	margin-top: 3rem;
+	box-shadow: 0px 5.06037px 5.06037px rgba(0, 0, 0, 0.25);
 	border-radius: 2.6rem;
-}
-
-.transaction-heading {
-	border-bottom: 1px solid #e1e1e1;
-	padding: 2rem;
-}
-.transaction-header {
-	font-size: 1.6rem;
-	margin-bottom: 1rem;
-}
-
-.transaction-paragraph {
-	font-size: 1.3rem;
+	padding: 3rem;
 }
 
 .transfer-box {
@@ -225,27 +214,25 @@ input,
 	justify-content: space-between;
 	padding: 0.9rem 1.5rem 3rem 1.5rem;
 }
-/*DEBIT CARD*/
-.debit {
-	border: 0.4px solid #999999;
-	border-radius: 5px;
-	flex-basis: 70%;
-	padding: 0.8rem;
-	padding-top: 2rem;
+/*BUY DATA*/
+
+.user-text {
+	font-size: 2.5rem;
+	font-weight: 800;
+	margin-bottom: 1rem;
+	color: #231942;
 }
 
-.debit-header {
-	font-size: 1.3rem;
+.user-paragraph {
+	font-size: 1.4rem;
+	color: #333333;
+	line-height: 2.4rem;
+	display: block;
 	margin-bottom: 1.5rem;
 }
 
-.debit-text {
-	font-size: 1.3rem;
-	font-weight: 700;
-	margin-bottom: 1rem;
-}
-
-.debit-input {
+.user-input,
+.user-select {
 	width: 100%;
 	padding: 1rem;
 	background-color: #f7f7fc;
@@ -254,28 +241,45 @@ input,
 	margin-bottom: 1rem;
 }
 
-.userName {
-	margin-top: 2rem;
-}
-
-.user {
-	margin-bottom: 4rem;
-}
-
-.debit-input:focus {
+.user-input,
+.user-select:focus {
 	outline: none;
 }
 
-.debit-submit {
+.user-select,
+.user-input::placeholder {
+	font-family: "Plus Jakarta Sans";
+	color: #d7d5ea;
+	margin-bottom: 3rem;
+}
+
+.package {
+	margin-top: 2rem;
+}
+.save-user {
+	display: flex;
+	align-items: center;
+}
+
+.save {
+	display: block;
+	font-size: 1.5rem;
+	margin-left: 1rem;
+	color: #333333;
+}
+
+.buy-submit {
 	width: 100%;
-	padding: 1rem;
+	padding: 1.5rem;
 	background: #00635d;
 	border: none;
 	border-radius: 0.8rem;
 	color: #fff;
+	font-size: 1.6rem;
 	font-family: "Plus Jakarta Sans";
 	margin-bottom: 8rem;
 	cursor: pointer;
+	margin-top: 2rem;
 }
 
 /*......CONTENT-RIGHT............*/
@@ -400,4 +404,64 @@ input,
 
 .activity-arrow {
 	margin-left: 2rem;
+}
+
+/* ..................RADIO BUTTON.......... */
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 50px;
+	height: 25px;
+}
+
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 20px;
+	width: 20px;
+	left: 3px;
+	bottom: 3px;
+	background-color: #fff;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
+
+input:checked + .slider {
+	background-color: #6359e9;
+}
+
+input:focus + .slider {
+	box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+}
+
+.slider.round {
+	border-radius: 34px;
+}
+
+.slider.round:before {
+	border-radius: 50%;
 }

@@ -178,8 +178,8 @@ input,
   flex-direction: column;
   justify-content: center; */
 
-	margin-right: 10rem;
-	flex: 0 0 50%;
+	margin-right: 3rem;
+	flex: 0 0 60%;
 }
 
 .welcome {
@@ -204,20 +204,9 @@ input,
 .transaction {
 	background-color: #fff;
 	margin-top: 3rem;
+	box-shadow: 0px 5.06037px 5.06037px rgba(0, 0, 0, 0.25);
 	border-radius: 2.6rem;
-}
-
-.transaction-heading {
-	border-bottom: 1px solid #e1e1e1;
-	padding: 2rem;
-}
-.transaction-header {
-	font-size: 1.6rem;
-	margin-bottom: 1rem;
-}
-
-.transaction-paragraph {
-	font-size: 1.3rem;
+	padding: 3rem;
 }
 
 .transfer-box {
@@ -225,179 +214,73 @@ input,
 	justify-content: space-between;
 	padding: 0.9rem 1.5rem 3rem 1.5rem;
 }
-/*DEBIT CARD*/
-.debit {
-	border: 0.4px solid #999999;
-	border-radius: 5px;
-	flex-basis: 70%;
-	padding: 0.8rem;
-	padding-top: 2rem;
-}
+/*BUY DATA*/
 
-.debit-header {
-	font-size: 1.3rem;
-	margin-bottom: 1.5rem;
-}
-
-.debit-text {
-	font-size: 1.3rem;
-	font-weight: 700;
+.user-text {
+	font-size: 2.5rem;
+	font-weight: 800;
 	margin-bottom: 1rem;
+	color: #231942;
 }
 
-.debit-input {
+.user-input {
 	width: 100%;
 	padding: 1rem;
 	background-color: #f7f7fc;
 	border: none;
 	border-radius: 0.5rem;
-	margin-bottom: 1rem;
+	margin-bottom: 2rem;
 }
 
-.userName {
-	margin-top: 2rem;
-}
-
-.user {
-	margin-bottom: 4rem;
-}
-
-.debit-input:focus {
+.user-input {
 	outline: none;
 }
 
-.debit-submit {
+.user-input::placeholder {
+	font-family: "Plus Jakarta Sans";
+	color: #d7d5ea;
+	margin-bottom: 3rem;
+}
+
+.package {
+	margin-top: 2rem;
+}
+.save-user {
+	display: flex;
+	align-items: center;
+}
+
+.save {
+	display: block;
+	font-size: 1.5rem;
+	margin-left: 1rem;
+	color: #333333;
+}
+
+.change-submit,
+.change-cancel {
 	width: 100%;
-	padding: 1rem;
+	padding: 1.5rem;
 	background: #00635d;
 	border: none;
 	border-radius: 0.8rem;
 	color: #fff;
+	font-size: 1.6rem;
 	font-family: "Plus Jakarta Sans";
-	margin-bottom: 8rem;
+	margin-bottom: 2rem;
 	cursor: pointer;
+	margin-top: 1rem;
+}
+
+.change-cancel {
+	background-color: #fff;
+	margin-bottom: 8rem;
+	border: 0.582033px solid #554e90;
+	border-radius: 4.36525px;
+	color: #1d1d41;
 }
 
 /*......CONTENT-RIGHT............*/
 .content-right {
 	flex: 1;
-}
-
-/*.ACTIVITY.*/
-.activity {
-	margin-top: 5rem;
-	background-color: #fff;
-	opacity: 0.5;
-	border-radius: 2.6rem;
-	padding: 2rem;
-}
-
-.activity-head {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.activity-text {
-	font-size: 1.8rem;
-	color: #1d1d41;
-	font-weight: 600;
-}
-
-.activity-select {
-	font-size: 1.4rem;
-	font-weight: 400;
-	color: #aeabd8;
-	font-family: "Plus Jakarta Sans", sans-serif;
-	padding: 0.5rem 1rem;
-	border: 1.33333px solid rgba(140, 137, 180, 0.5);
-	border-radius: 1rem;
-}
-
-.activity-graph {
-	width: 28rem;
-	height: auto;
-	margin-left: 6rem;
-	margin-top: 6rem;
-}
-
-.activity-percent {
-	font-size: 2.5rem;
-	color: #1d1d41;
-	font-weight: 700;
-	text-align: center;
-	line-height: 4.3rem;
-	margin-top: -6rem;
-	margin-bottom: 6rem;
-	margin-left: 3rem;
-}
-
-.activity-progress {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	font-size: 1.7rem;
-	margin-left: 2rem;
-}
-
-.activity-report {
-}
-
-.activity-payment {
-	position: relative;
-	font-weight: 400;
-}
-
-.activity-payment::after {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: -3rem;
-	width: 17px;
-	height: 17px;
-	border-radius: 50%;
-	background-color: #00635d;
-}
-
-.activity-hobby {
-	position: relative;
-	font-weight: 400;
-}
-
-.activity-hobby::after {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: -3rem;
-	width: 17px;
-	height: 17px;
-	border-radius: 50%;
-	background-color: #64cff6;
-}
-
-.activity-per {
-	color: #1d1d41;
-	font-weight: 1rem;
-	font-weight: 700;
-	margin-left: -3rem;
-	margin-top: 0.5rem;
-}
-
-.activity-btn {
-	font-size: 1.6rem;
-	margin-top: 2rem;
-	padding: 1rem 2rem;
-	width: 70%;
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
-	border: 1.33333px solid #1d1d41;
-	border-radius: 13.3333px;
-	background-color: transparent;
-	font-family: "Plus Jakarta Sans", sans-serif;
-	cursor: pointer;
-}
-
-.activity-arrow {
-	margin-left: 2rem;
 }

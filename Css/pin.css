@@ -70,8 +70,7 @@ body {
 	display: inline-block;
 }
 
-.nav-item {
-}
+.nav-item {}
 
 .nav-active {
 	background-color: #00635d;
@@ -80,6 +79,7 @@ body {
 	color: #fff;
 	margin-left: -2rem;
 }
+
 .active-link {
 	color: #fff;
 }
@@ -97,8 +97,7 @@ body {
 	margin-right: 2.5rem;
 }
 
-.logout {
-}
+.logout {}
 
 .logout-link {
 	text-decoration: none;
@@ -133,6 +132,7 @@ body {
 	align-items: center;
 	margin-right: 2rem;
 }
+
 .search-input {
 	border: 1.33333px solid #ffffff;
 	padding: 1rem 2rem;
@@ -148,10 +148,6 @@ input,
 	font-weight: 1.4rem;
 	font-weight: 400;
 	color: #1d1d41;
-}
-
-input:focus {
-	outline: none;
 }
 
 .search-input:focus {
@@ -172,7 +168,6 @@ input:focus {
 /*...........CONTENT-DETAILS............*/
 .content-details {
 	display: flex;
-	flex-direction: row;
 	font-family: "Plus Jakarta Sans", sans-serif;
 	padding: 3rem;
 }
@@ -183,7 +178,8 @@ input:focus {
   flex-direction: column;
   justify-content: center; */
 
-	margin-right: 1.6rem;
+	margin-right: 3rem;
+	flex: 0 0 60%;
 }
 
 .welcome {
@@ -200,230 +196,94 @@ input:focus {
 	font-weight: 600;
 	color: #1d1d41;
 }
+
 .back-arrow {
 	margin-right: 1rem;
 }
 
-/* ....TRANSACTION....  */
-.transaction-box {
+/* ....TRANSACTION HISTORY....  */
+.transaction {
 	background-color: #fff;
-	padding: 2rem;
-
 	margin-top: 3rem;
-	border-radius: 5px;
+	box-shadow: 0px 5.06037px 5.06037px rgba(0, 0, 0, 0.25);
+	border-radius: 2.6rem;
+	padding: 3rem;
 }
 
-.transaction-header {
-	line-height: 20px;
-	color: #5e548e;
-	font-weight: 400;
+.transfer-box {
+	display: flex;
+	justify-content: space-between;
+	padding: 0.9rem 1.5rem 3rem 1.5rem;
+}
+
+/*BUY DATA*/
+
+.user-text {
+	font-size: 2.5rem;
+	font-weight: 800;
+	margin-bottom: 1rem;
+	color: #231942;
+}
+
+.user-input {
+	width: 100%;
+	padding: 1rem;
+	background-color: #f7f7fc;
+	border: none;
+	border-radius: 0.5rem;
+	margin-bottom: 2rem;
+}
+
+.user-input {
+	outline: none;
+}
+
+.user-input::placeholder {
+	font-family: "Plus Jakarta Sans";
+	color: #d7d5ea;
 	margin-bottom: 3rem;
-	position: relative;
 }
 
-/*USER-HEAD*/
-.user-head {
+.package {
+	margin-top: 2rem;
+}
+
+.save-user {
 	display: flex;
 	align-items: center;
-	position: relative;
-	margin-top: 6rem;
 }
 
-.user-head::before,
-.user-1::before,
-.transaction-header::before {
-	position: absolute;
-	content: "";
-	top: 4rem;
-	left: 0rem;
-	width: 99%;
-	height: 1px;
-	background-color: #dee2e6;
-	border: 0.1px solid #dee2e6;
-}
-
-.transaction-header::before {
-	top: 5rem;
-}
-
-.manage-check {
-	margin-right: 10rem;
-}
-
-.manage-details {
-	display: flex;
-	align-items: center;
-	flex: 0 0 90%;
-}
-
-.manage-user {
-	margin-right: 8rem;
-	font-size: 1.3rem;
-	color: #495057;
-	font-family: "Mulish";
-}
-
-.manage-amount {
-	color: #495057;
-	font-size: 1.3rem;
-	font-family: "Mulish";
-}
-
-.manage-date {
-	color: #495057;
-	font-size: 1.3rem;
-	font-family: "Mulish";
-	margin-right: 11rem;
-}
-
-/*USER-1*/
-.user-1,
-.user-5 {
-	display: flex;
-	align-items: center;
-	margin-top: 4rem;
-	position: relative;
-	font-size: 1.3rem;
-}
-
-.user-1::before {
-	top: 6rem;
-}
-
-.user-5 {
-	margin-bottom: 5rem;
-}
-
-.trans-date {
-	margin-right: 6rem;
-}
-
-.trans-user {
-	margin-right: 6rem;
-}
-
-.trans-user2 {
-	margin-right: 3.5rem;
-}
-
-.trans-user3 {
-	margin-right: 5rem;
-}
-.trans-user4 {
-	margin-right: 6.6rem;
-}
-.trans-amount {
-	margin-right: 5rem;
-}
-
-.trans-approve {
-	margin-right: 1.5rem;
-	background-color: #0f9e26;
-	padding: 1rem 3rem;
-	border-radius: 5px;
-}
-
-.trans-decline {
-	background-color: #e96b4f;
-	padding: 1rem 3rem;
-	border-radius: 5px;
-}
-
-.approve-link {
-	color: #fff;
-	text-decoration: none;
-
-	border-radius: 5px;
+.save {
 	display: block;
-	text-align: center;
+	font-size: 1.5rem;
+	margin-left: 1rem;
+	color: #333333;
 }
 
-.decline-link {
+.change-submit,
+.change-cancel {
+	width: 100%;
+	padding: 1.5rem;
+	background: #00635d;
+	border: none;
+	border-radius: 0.8rem;
 	color: #fff;
-	text-decoration: none;
-	border-radius: 5px;
+	font-size: 1.6rem;
+	font-family: "Plus Jakarta Sans";
+	margin-bottom: 2rem;
+	cursor: pointer;
+	margin-top: 1rem;
 }
+
+.change-cancel {
+	background-color: #fff;
+	margin-bottom: 4rem;
+	border: 0.582033px solid #554e90;
+	border-radius: 4.36525px;
+	color: #1d1d41;
+}
+
 /*......CONTENT-RIGHT............*/
 .content-right {
 	flex: 1;
-	background-color: #ffffff;
-	border-radius: 10px;
-	margin-top: 5rem;
-	text-align: center;
-	padding: 1.5rem;
-}
-
-.confirm {
-	font-size: 1.6rem;
-	color: #333333;
-	margin-top: 2.5rem;
-	font-weight: 600;
-	line-height: 2rem;
-	position: relative;
-}
-
-.cancel-confirm {
-	position: absolute;
-	right: 2rem;
-	top: -1rem;
-	color: #ffff;
-	background-color: #00635d;
-	width: 3rem;
-	height: 3rem;
-	border-radius: 50%;
-	font-size: 3rem;
-}
-
-.confirm-text {
-	margin-top: 2.5rem;
-	color: #00635d;
-	background: #e4defc;
-	border-radius: 5px;
-	padding: 1rem 0;
-	font-weight: 700;
-	font-size: 1.2rem;
-}
-
-.confirm-user {
-	margin-top: 5rem;
-	display: flex;
-	justify-content: space-between;
-	font-size: 1.3rem;
-	padding: 0 1rem;
-}
-
-.confirm-name {
-	font-weight: 400;
-}
-
-.confirm-username {
-	font-weight: 600;
-}
-
-.confirm-price {
-	margin-top: 3rem;
-	display: flex;
-	justify-content: space-between;
-	font-size: 1.3rem;
-	padding: 0 0.8rem;
-}
-
-.confirm-amount {
-	font-weight: 400;
-}
-
-.confirm-userAmount {
-	font-weight: 600;
-}
-
-.confirm-btn {
-	background-color: #00635d;
-	border-radius: 5px;
-	margin-top: 6rem;
-	margin-bottom: 2rem;
-	width: 100%;
-	padding: 1.5rem;
-	font-family: "Plus Jakarta Sans", sans-serif;
-	border: none;
-	color: #fff;
 }
