@@ -70,8 +70,7 @@ body {
 	display: inline-block;
 }
 
-.nav-item {
-}
+.nav-item {}
 
 .nav-active {
 	background-color: #00635d;
@@ -80,7 +79,32 @@ body {
 	color: #fff;
 	margin-left: -2rem;
 }
+
 .active-link {
+	color: #fff;
+}
+
+/*DROP DOWN MENU*/
+
+.dropdown {
+	display: none;
+}
+
+.wallet:hover .dropdown {
+	border-radius: 10px;
+	margin-top: .2rem;
+	display: block;
+	padding: 1rem;
+	margin-left: 2rem;
+}
+
+.dropdown li {
+	list-style: none;
+	padding: .6rem;
+}
+
+.dropdown a {
+	text-decoration: none;
 	color: #fff;
 }
 
@@ -97,8 +121,7 @@ body {
 	margin-right: 2.5rem;
 }
 
-.logout {
-}
+.logout {}
 
 .logout-link {
 	text-decoration: none;
@@ -133,6 +156,7 @@ body {
 	align-items: center;
 	margin-right: 2rem;
 }
+
 .search-input {
 	border: 1.33333px solid #ffffff;
 	padding: 1rem 2rem;
@@ -196,6 +220,7 @@ input,
 	font-weight: 600;
 	color: #1d1d41;
 }
+
 .back-arrow {
 	margin-right: 1rem;
 }
@@ -211,6 +236,7 @@ input,
 	border-bottom: 1px solid #e1e1e1;
 	padding: 2rem;
 }
+
 .transaction-header {
 	font-size: 1.6rem;
 	margin-bottom: 1rem;
@@ -225,6 +251,7 @@ input,
 	justify-content: space-between;
 	padding: 0.9rem 1.5rem 3rem 1.5rem;
 }
+
 /*DEBIT CARD*/
 .debit {
 	border: 0.4px solid #999999;
@@ -340,14 +367,14 @@ input,
 }
 
 .activity-percent {
-	font-size: 2.5rem;
+	font-size: 5rem;
 	color: #1d1d41;
 	font-weight: 700;
 	text-align: center;
 	line-height: 4.3rem;
-	margin-top: -6rem;
+	margin-top: -7rem;
 	margin-bottom: 6rem;
-	margin-left: 6rem;
+	margin-left: 3rem;
 }
 
 .activity-progress {
@@ -358,8 +385,7 @@ input,
 	margin-left: 2rem;
 }
 
-.activity-report {
-}
+.activity-report {}
 
 .activity-payment {
 	position: relative;

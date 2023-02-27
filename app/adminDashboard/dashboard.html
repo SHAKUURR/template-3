@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@700&family=Plus+Jakarta+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@700&family=Plus+Jakarta+Sans:wght@500&display=swap"
+      rel="stylesheet">
     <link rel="stylesheet" href="../../css/dashboard.css" />
+    <link rel="stylesheet" href="../../Media Query/dashboardMQ.css" />
     <title>Dashboard</title>
   </head>
   <body>
@@ -18,59 +20,53 @@
             <p class="user-photo">PA</p>
             <p class="user-name">Peace Adedokun</p>
           </div>
-  
+
           <ul class="user-nav">
             <li class="nav-list nav-active">
               <a href="#" class="nav-link active-link">
                 <img src="../../images/dashboard.png" class="nav-image">
-              
-                <span class="nav-item">Dashboard</span> 
-              </a           
-            </li>
-  
+
+                <span class="nav-item">Dashboard</span>
+              </a </li>
+
             <li class="nav-list">
               <a href="#" class="nav-link">
                 <img src="../../images/Credit Card 1.png" class="nav-image">
-             
-              <span class="nav-item">Wallet</span>  
-              </a          
-            </li>
-  
+
+                <span class="nav-item">Wallet</span>
+              </a </li>
+
             <li class="nav-list">
               <a href="#" class="nav-link">
                 <img src="../../images/History.png" class="nav-image">
-              
-              <span class="nav-item">Transactions</span>  
-              </a          
-            </li>
-  
+
+                <span class="nav-item">Transactions</span>
+              </a </li>
+
             <li class="nav-list">
               <a href="#" class="nav-link">
                 <img src="../../images/Chart Statistics 2.png" class="nav-image">
-              
-              <span class="nav-item">Analytics</span>   
-              </a         
-            </li>
-  
+
+                <span class="nav-item">Analytics</span>
+              </a </li>
+
             <li class="nav-list">
               <a href="#" class="nav-link">
                 <img src="../../images/Settings 1.png" class="nav-image">
-              
-              <span class="nav-item">Settings</span> 
-              </a           
-            </li>
-  
+
+                <span class="nav-item">Settings</span>
+              </a </li>
+
             <li class="nav-list">
               <a href="#" class="nav-link">
                 <img src="../../images/Settings 1.png" class="nav-image">
-              
-              <span class="nav-item">Developers</span> 
-              </a           
-            </li>
-               
+
+                <span class="nav-item">Developers</span>
+              </a </li>
+
           </ul>
         </div>
-       
+
 
         <div class="log">
           <a href="#" class="arrow-link"><img src="../../images/Icon.png" class="arrow"></a>
@@ -94,171 +90,247 @@
           </div>
         </div>
 
-      <div class="content-details">
-<!-- .................CONTENT LEFT.................. -->
-        <div class="content-left">
-          <div class="welcome">
-            <h3 class="welcome-text">Good morning,</h3>
-            <img src="../../images/noto_sun.png"  class="sun">
-            <p class="account-number"> Account Number: 2352672636 Wema Bank</p>
-          </div>
-          
-          <div class="balance">
-            <div class="wallet-balance">
-              <img src="../../images/material-symbols_account-balance-wallet.png" class="wallet-img">
-              
-              <h4 class="balance">Wallet Balance</h4>
-              <p class="amount">N656</p>
+        <div class="content-details">
+          <!-- .................CONTENT LEFT.................. -->
+          <div class="content-left">
+            <div class="welcome">
+              <h3 class="welcome-text">Good morning,</h3>
+              <img src="../../images/noto_sun.png" class="sun">
+              <p class="account-number"> Account Number: 2352672636 Wema Bank</p>
             </div>
-            <div class="cd-balance">
-              <img src="../../images/material-symbols_account-balance-wallet.png" class="wallet-img">
-              
-              <h4 class="balance">CG Balance</h4>
-              <p class="amount">N656</p>
+
+            <div class="balance">
+              <div class="wallet-balance">
+                <img src="../../images/material-symbols_account-balance-wallet.png" class="wallet-img">
+
+                <h4 class="balance">Wallet Balance</h4>
+                <p class="amount">N656</p>
+              </div>
+              <div class="cd-balance">
+                <img src="../../images/material-symbols_account-balance-wallet.png" class="wallet-img">
+
+                <h4 class="balance">CG Balance</h4>
+                <p class="amount">N656</p>
+              </div>
             </div>
+
+            <!-- ....ANALYTICS.... -->
+            <div class="analytics-box">
+              <div class="analytics-header">
+                <div class="analytics-text">Analytics</div>
+                <div class="analytics-details">
+                  <h3 class="analytics-income">Income</h3>
+                  <h3 class="analytics-outcome">Outcome</h3>
+
+                  <select class="analytics-select">
+                    <option class="analytics-option">2023</option>
+                  </select>
+                </div>
+              </div>
+              <img src="../../images/analytics (2).png" class="analytics-graph">
+            </div>
+            <!-- ....TRANSACTION HISTORY.... -->
+            <div class="transaction">
+              <div class="transaction-heading">
+                <h3 class="transaction-header">Transaction</h3>
+                <div class="transaction-history">
+                  <form class="transaction-form">
+                    <input type="text" placeholder="Search for anything..." class="transaction-input">
+                    <button class="transaction-button">
+                      <img src="../../images/search.png" class="transaction-image">
+                    </button>
+                  </form>
+
+                  <select class="transaction-select">
+                    <option class="transaction-option">
+                      <p class="transaction-date">10 Jan- 20 Jan</p>
+                    </option>
+                  </select>
+                </div>
+              </div>
+
+              <ul class="transaction-table">
+                <div class="table row">
+                  <h3 class="table-heading">Name</h3>
+                  <li class="table-item"><a href="#" class="table-link">Data reacharge</a></li>
+                  <li class="table-item"><a href="#" class="table-link">Airtime</a></li>
+                </div>
+                <div class="table row">
+                  <h3 class="table-heading">Date</h3>
+                  <li class="table-item"><a href="#" class="table-link">Fri,20 Jan 2023</a></li>
+                  <li class="table-item"><a href="#" class="table-link">Thur,19 Jan 2023</a></li>
+                </div>
+                <div class="table row">
+                  <h3 class="table-heading">Amount</h3>
+                  <li class="table-item"><a href="#" class="table-link">N20,000</a></li>
+                  <li class="table-item"><a href="#" class="table-link">N45,000</a></li>
+                </div>
+                <div class="table row">
+                  <h3 class="table-heading">Status</h3>
+                  <li class="table-item"><a href="#" class="table-link deposited">Deposited</a></li>
+                  <li class="table-item"><a href="#" class="table-link deposited">Deposited</a></li>
+                </div>
+              </ul>
+            </div>
+
           </div>
+          <!-- .................CONTENT RIGHT.................. -->
+          <div class="content-right">
+            <div class="options">
+              <h4 class="options-head">Quick Options</h4>
+              <div class="quick-options">
+                <a href="#" class="option-link">
+                  <div class="option">
+                    <img src="../../images/data icon.png" class="option-icon">
+                    <p class="option-text">Buy Data</p>
+                  </div>
+                </a>
+                <a href="#" class="option-link">
+                  <div class="option">
+                    <img src="../../images/call.png" class="option-icon">
+                    <p class="option-text">Buy Airtime</p>
+                  </div>
+                </a>
+                <a href="#" class="option-link">
+                  <div class="option">
+                    <img src="../../images/bills.png" class="option-icon">
+                    <p class="option-text">Pay Bills</p>
+                  </div>
+                </a>
+              </div>
 
-          <!-- ....ANALYTICS.... -->
-          <div class="analytics-box">
-            <div class="analytics-header">
-              <div class="analytics-text">Analytics</div>
-              <div class="analytics-details">
-                <h3 class="analytics-income">Income</h3>
-                <h3 class="analytics-outcome">Outcome</h3>
+              <div class="quick-options">
+                <a href="#" class="option-link">
+                  <div class="option">
+                    <img src="../../images/cable.png" class="option-icon cable">
+                    <p class="option-text">Cable</p>
+                  </div>
+                </a>
+                <a href="#" class="option-link">
+                  <div class="option">
+                    <img src="../../images/edu.png" class="option-icon">
+                    <p class="option-text">Education</p>
+                  </div>
+                </a>
+                <a href="#" class="option-link">
+                  <div class="option">
+                    <img src="../../images/internet.png" class="option-icon">
+                    <p class="option-text">Internet</p>
+                  </div>
+                </a>
+              </div>
 
-                <select class="analytics-select">
-                  <option class="analytics-option">2023</option>
+              <div class="quick-options">
+                <a href="#" class="option-link">
+                  <div class="option">
+                    <img src="../../images/airtime-cash.png" class="option-icon">
+                    <p class="option-text">Airtime to Cash</p>
+                  </div>
+                </a>
+                <a href="#" class="option-link">
+                  <div class="option">
+                    <img src="../../images/cash-register.png" class="option-icon">
+                    <p class="option-text">Recharge card printing</p>
+                  </div>
+                </a>
+                <a href="#" class="option-link">
+                  <div class="option">
+                    <img src="../../images/vaadin_money-withdraw.png" class="option-icon">
+                    <p class="option-text">Widthdraw funds</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- ..........ACTIVITY............ -->
+            <div class="activity">
+              <div class="activity-head">
+                <h4 class="activity-text">Activity</h4>
+                <select class="activity-select">
+                  <option class="activity-option">Month</option>
                 </select>
               </div>
-            </div>
-            <img src="../../images/analytics (2).png" class="analytics-graph">
-          </div>
-          <!-- ....TRANSACTION HISTORY.... -->
-          <div class="transaction">
-            <div class="transaction-heading">
-              <h3 class="transaction-header">Transaction</h3>
-              <div class="transaction-history">
-                <form class="transaction-form">
-                  <input type="text" placeholder="Search for anything..." class="transaction-input">
-                  <button class="transaction-button">
-                    <img src="../../images/search.png" class="transaction-image">
-                  </button>
-                </form>
-               
-                <select class="transaction-select">
-                  <option class="transaction-option">
-                   <p class="transaction-date">10 Jan- 20 Jan</p>
-                  </option>
-                </select>
+              <div class="chartCard">
+                <div class="chartBox">
+                  <canvas id="myChart" style="margin: 4rem auto 0 auto"></canvas>
+                </div>
               </div>
-            </div>
+              <!-- <img src="../../images/activity.png" class="activity-graph"> -->
+              <p class="activity-percent">75%</p>
 
-            <ul class="transaction-table">
-              <div class="table row">
-                <h3 class="table-heading">Name</h3>
-                <li class="table-item"><a href="#" class="table-link">Data reacharge</a></li>
-                <li class="table-item"><a href="#" class="table-link">Airtime</a></li>
+              <div class="activity-progress">
+                <div class="activity-report">
+                  <h5 class="activity-payment">Daily payment</h5>
+                  <p class="activity-per">55%</p>
+                </div>
+
+                <div class="activity-report">
+                  <h5 class="activity-hobby">Hobby</h5>
+                  <p class="activity-per">20%</p>
+                </div>
               </div>
-              <div class="table row">
-                <h3 class="table-heading">Date</h3>
-                <li class="table-item"><a href="#" class="table-link">Fri,20 Jan 2023</a></li>
-                <li class="table-item"><a href="#" class="table-link">Thur,19 Jan 2023</a></li>
-              </div>          
-              <div class="table row">
-                <h3 class="table-heading">Amount</h3>
-                <li class="table-item"><a href="#" class="table-link">N20,000</a></li>
-                <li class="table-item"><a href="#" class="table-link">N45,000</a></li>
-              </div>  
-              <div class="table row">
-                <h3 class="table-heading">Status</h3>
-                <li class="table-item"><a href="#" class="table-link deposited">Deposited</a></li>
-                <li class="table-item"><a href="#" class="table-link deposited">Deposited</a></li>
-              </div>           
-            </ul>
-          </div>                
-        
+              <button type="submit" class="activity-btn">View all activity <span class="activity-arrow">&#8594;</span>
+              </button>
+            </div>
+          </div>
+
         </div>
-<!-- .................CONTENT RIGHT.................. -->
-        <div class="content-right">
-         <div class="options">
-          <h4 class="options-head">Quick Options</h4>
-          <div class="quick-options">
-            <a href="#" class="option-link"><div class="option">
-              <img src="../../images/data icon.png" class="option-icon">
-              <p class="option-text">Buy Data</p>
-            </div></a>
-            <a href="#" class="option-link"><div class="option">
-              <img src="../../images/call.png" class="option-icon">
-              <p class="option-text">Buy Airtime</p>
-            </div></a>
-            <a href="#" class="option-link"><div class="option">
-              <img src="../../images/bills.png" class="option-icon">
-              <p class="option-text">Pay Bills</p>
-            </div></a>          
-          </div>
 
-          <div class="quick-options">
-            <a href="#" class="option-link"><div class="option">
-              <img src="../../images/cable.png" class="option-icon cable">
-              <p class="option-text">Cable</p>
-            </div></a>
-            <a href="#" class="option-link"><div class="option">
-              <img src="../../images/edu.png" class="option-icon">
-              <p class="option-text">Education</p>
-            </div></a>
-            <a href="#" class="option-link"><div class="option">
-              <img src="../../images/internet.png" class="option-icon">
-              <p class="option-text">Internet</p>
-            </div></a>         
-          </div>
 
-          <div class="quick-options">
-            <a href="#" class="option-link"><div class="option">
-              <img src="../../images/airtime-cash.png" class="option-icon">
-              <p class="option-text">Airtime to Cash</p>
-            </div></a>
-            <a href="#" class="option-link"><div class="option">
-              <img src="../../images/cash-register.png" class="option-icon">
-              <p class="option-text">Recharge card printing</p>
-            </div></a>
-            <a href="#" class="option-link"><div class="option">
-              <img src="../../images/vaadin_money-withdraw.png" class="option-icon">
-              <p class="option-text">Widthdraw funds</p>
-            </div></a>           
-          </div>
-         </div>
-
-         <!-- ..........ACTIVITY............ -->
-         <div class="activity">
-            <div class="activity-head">
-              <h4 class="activity-text">Activity</h4>
-              <select class="activity-select">
-                <option class="activity-option">Month</option>
-              </select>
-            </div>
-            <img src="../../images/activity.png" class="activity-graph">
-            <p class="activity-percent">75%</p>
-
-            <div class="activity-progress">
-              <div class="activity-report">
-                <h5 class="activity-payment">Daily payment</h5>
-                <p class="activity-per">55%</p>
-              </div>
-
-              <div class="activity-report">
-                <h5 class="activity-hobby">Hobby</h5>
-                <p class="activity-per">20%</p>
-              </div>
-            </div>
-            <button type="submit" class="activity-btn">View all activity <span class="activity-arrow">&#8594;</span>
-            </button>
-         </div>
-        </div>
-  
-      </div>
-
-     
       </div>
     </header>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+      // setup 
+      const data = {
+        labels: ['Daily Payment', 'Hobby', 'Wed'],
+        datasets: [{
+          label: 'Activity',
+          data: [35, 25, 8],
+          backgroundColor: [
+            'rgba(0, 99, 93, 1)',
+            'rgba(8, 164, 189, 1)',
+            'rgba(58, 58, 90, 1)',
+          ],
+          borderColor: [
+            'rgba(0, 99, 93, 1)',
+            'rgba(8, 164, 189, 1)',
+            'rgba(58, 58, 90, 1)',
+          ],
+          borderWidth: 1,
+          cutout: '75%',
+          circumference: 180,
+          rotation: 270,
+          borderRadius: 3
+        }]
+      };
+
+      // config 
+      const config = {
+        type: 'doughnut',
+        data,
+        options: {
+          aspectRatio: 2,
+          plugins: {
+            legend: {
+              display: false
+            }
+          },
+          // spacing: -20 //set the spacing between segments to 0
+        }
+      };
+
+      // render init block
+      const myChart = new Chart(
+        document.getElementById('myChart'),
+        config
+      );
+
+      // Instantly assign Chart.js version
+      const chartVersion = document.getElementById('chartVersion');
+    </script>
+
+
+
   </body>
 </html>

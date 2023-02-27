@@ -8,9 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@700&family=Plus+Jakarta+Sans:wght@500&display=swap"
       rel="stylesheet">
-    <link rel="stylesheet" href="../../css/pin.css" />
-    <link rel="stylesheet" href="../../Media Query/buydataMQ.css" />
-    <title>CHANGE PIN</title>
+    <link rel="stylesheet" href="../../css/receipt.css" />
+    <title>CONFIRM RECEIPT</title>
   </head>
   <body>
     <header class="header">
@@ -67,6 +66,7 @@
           </ul>
         </div>
 
+
         <div class="log">
           <a href="#" class="arrow-link"><img src="../../images/Icon.png" class="arrow"></a>
           <span class="logout"><a href="#" class="logout-link">Logout</a></span>
@@ -97,16 +97,38 @@
                 <p class="back"><span class="back-arrow"> &larr;</span>Back</p>
               </a>
             </div>
+
+
+
             <!-- ....TRANSACTION HISTORY.... -->
             <div class="transaction">
-              <!-- DUY DATA -->
-              <h2 class="user-text">Change Pin</h2>
-              <input type="password" class="user-input" placeholder="Old Pin">
-              <input type="password" class="user-input" placeholder="New Pin">
-              <input type="password" class="user-input" placeholder="Confirm Pin ">
-              <button type="submit" class="change-submit">Save Changes</button>
 
-              <button type="submit" class="change-cancel">Cancel</button>
+
+
+              <!-- DUY DATA -->
+
+              <h2 class="user-text">Buy Airtime</h2>
+              <input type="text" class="user-input" placeholder="Mobile Number">
+              <label class="network-text">Network Provider</label>
+              <select class="user-select">
+                <option class="user-option">Plan</option>
+              </select>
+              <select class="user-select">
+                <option class="">Plan</option>
+              </select>
+              <div class="save-user">
+                <label class="switch">
+                  <input type="checkbox" checked>
+                  <span class="slider round"></span>
+                </label>
+                <p class="save">Save Beneficiary</p>
+              </div>
+
+              <button type="submit" class="buy-submit">Pay</button>
+
+
+
+
             </div>
 
           </div>
@@ -114,11 +136,48 @@
           <div class="content-right">
 
 
+            <!-- ..........ACTIVITY............ -->
+            <div class="activity">
+              <div class="activity-head">
+                <h4 class="activity-text">Activity</h4>
+                <select class="activity-select">
+                  <option class="activity-option">Month</option>
+                </select>
+              </div>
+              <img src="../../images/activity.png" class="activity-graph">
+              <p class="activity-percent">75%</p>
 
+              <div class="activity-progress">
+                <div class="activity-report">
+                  <h5 class="activity-payment">Daily payment</h5>
+                  <p class="activity-per">55%</p>
+                </div>
+
+                <div class="activity-report">
+                  <h5 class="activity-hobby">Hobby</h5>
+                  <p class="activity-per">20%</p>
+                </div>
+              </div>
+              <button type="submit" class="activity-btn">View all activity <span class="activity-arrow">&#8594;</span>
+              </button>
+            </div>
           </div>
 
         </div>
-
+        <div class="overlay"></div>
+        <div class="receipt-box">
+          <h2 class="receipt-header">Confirm Information<span><a href="#">&times;</a></span></h2>
+          <p class="receipt-text">Confirm that the details are correct. Payment are not reversible.</p>
+          <div class="meter">
+            <p class="meter-text">Metre Number</p>
+            <p class="meter-no">08161309179</p>
+          </div>
+          <div class="amount">
+            <p class="amount-text">Amount</p>
+            <p class="amount-no">N12,000</p>
+          </div>
+          <button type="submit" class="receipt-pay">Pay N12,000</button>
+        </div>
 
       </div>
     </header>

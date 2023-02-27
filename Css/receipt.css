@@ -178,8 +178,8 @@ input,
   flex-direction: column;
   justify-content: center; */
 
-  margin-right: 3rem;
-  flex: 0 0 54%;
+  margin-right: 4rem;
+  flex: 0 0 60%;
 }
 
 .welcome {
@@ -201,73 +201,83 @@ input,
   margin-right: 1rem;
 }
 
-.account-number {
-  font-size: 1.2rem;
-  margin-left: 1.5rem;
-}
-
-/* ....ANALYTICS....  */
-.analytics-box {
+/* ....TRANSACTION HISTORY....  */
+.transaction {
   background-color: #fff;
-  border-radius: 26.6667px;
-  margin-top: 2rem;
-  padding: 2rem;
+  margin-top: 3rem;
+  box-shadow: 0px 5.06037px 5.06037px rgba(0, 0, 0, 0.25);
+  border-radius: 2.6rem;
+  padding: 3rem;
 }
 
-.analytics-text {
-  font-size: 2rem;
-  font-weight: 600;
-  color: #01172f;
-}
-
-.analytics-details {
-  flex: 0 0 50%;
+.transfer-box {
   display: flex;
   justify-content: space-between;
-  font-size: 1.3rem;
-  color: #01172f;
+  padding: 0.9rem 1.5rem 3rem 1.5rem;
 }
 
-.analytics-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 5rem;
+/*BUY DATA*/
+
+.user-text {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: #231942;
 }
 
-.analytics-income,
-.analytics-outcome {
-  position: relative;
-}
-
-.analytics-income::before,
-.analytics-outcome::before {
-  content: "";
-  position: absolute;
-  top: 0.4rem;
-  left: -2rem;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background-color: #00635d;
-}
-
-.analytics-outcome::before {
-  background-color: #08a4bd;
-}
-
-.analytics-select {
-  font-size: 1.2rem;
-  font-weight: 400;
-  color: #00635d;
-  font-family: "Plus Jakarta Sans", sans-serif;
-  padding: 0.5rem 1rem;
-  border: 1.33333px solid #00635d;
-  border-radius: 1rem;
-}
-
-.analytics-graph {
+.user-input,
+.user-select {
   width: 100%;
+  padding: 1rem;
+  background-color: #f7f7fc;
+  border: none;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.user-input,
+.user-select:focus {
+  outline: none;
+}
+
+.user-select,
+.user-input::placeholder {
+  font-family: "Plus Jakarta Sans";
+  color: #d7d5ea;
+  margin-bottom: 3rem;
+}
+
+.network-text {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #333333;
+  display: block;
+}
+
+.save-user {
+  display: flex;
+  align-items: center;
+}
+
+.save {
+  display: block;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  color: #333333;
+}
+
+.buy-submit {
+  width: 100%;
+  padding: 1.5rem;
+  background: #00635d;
+  border: none;
+  border-radius: 0.8rem;
+  color: #fff;
+  font-size: 1.6rem;
+  font-family: "Plus Jakarta Sans";
+  margin-bottom: 8rem;
+  cursor: pointer;
+  margin-top: 2rem;
 }
 
 /*......CONTENT-RIGHT............*/
@@ -277,7 +287,7 @@ input,
 
 /*.ACTIVITY.*/
 .activity {
-  margin-top: 4rem;
+  margin-top: 5rem;
   background-color: #fff;
   opacity: 0.5;
   border-radius: 2.6rem;
@@ -309,17 +319,17 @@ input,
 .activity-graph {
   width: 28rem;
   height: auto;
-  margin-left: 8rem;
+  margin-left: 6rem;
   margin-top: 6rem;
 }
 
 .activity-percent {
-  font-size: 5rem;
+  font-size: 2.5rem;
   color: #1d1d41;
   font-weight: 700;
   text-align: center;
   line-height: 4.3rem;
-  margin-top: -7rem;
+  margin-top: -6rem;
   margin-bottom: 6rem;
   margin-left: 3rem;
 }
@@ -391,4 +401,160 @@ input,
 
 .activity-arrow {
   margin-left: 2rem;
+}
+
+/* ..................RADIO BUTTON.......... */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  bottom: 3px;
+  background-color: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked+.slider {
+  background-color: #5e548e;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* OVERLAY */
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 20%;
+  width: 80%;
+  height: 104%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(1px);
+  z-index: 5;
+}
+
+/*.............SUCCESSFUL RECEIPT......*/
+.receipt-box {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  background-color: #FFFFFF;
+  border-radius: 10px 10px 0px 0px;
+  padding: 2rem 3rem;
+  z-index: 10;
+  text-align: center;
+}
+
+.receipt-header {
+  color: #333333;
+  margin-bottom: 3rem;
+  position: relative;
+
+}
+
+.receipt-header span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 2rem;
+  display: inline-block;
+  background-color: #00635D;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.receipt-header span a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.receipt-text {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  background-color: #E7E7FC;
+  border-radius: 5px;
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: #1D1D41;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.meter,
+.amount {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  margin-bottom: 1.6rem;
+}
+
+.meter-no,
+.amount-no {
+  font-weight: 700;
+}
+
+.amount-no {
+  margin-right: 2.5rem;
+}
+
+.receipt-pay {
+  width: 100%;
+  font-size: 1.6rem;
+  padding: 1rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  background-color: #00635D;
+  color: #fff;
+  border-radius: .9rem;
+  border: none;
+  font-family: "Mulish", sans-serif;
+  margin-top: 3rem;
+
 }
