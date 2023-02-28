@@ -13,7 +13,11 @@
 /*600px*/
 @media only screen and (max-width: 37.5em) {
 
-  .side-bar {
+  /* .side-bar {
+    display: none;
+  } */
+
+  .sidebarHidden {
     display: none;
   }
 
@@ -25,6 +29,12 @@
     flex-direction: column;
     padding: 2rem;
   }
+
+  #menu {
+    display: inline-block
+  }
+
+
 
   .content-left {
     margin-right: 0;

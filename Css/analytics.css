@@ -172,6 +172,35 @@ input,
   padding: 3rem;
 }
 
+/*MENU*/
+#menu {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+  background-color: #00635d;
+  padding: 1.5rem;
+  display: none;
+  transition: all .2s;
+
+}
+
+
+
+#menu.active:before {
+  content: '\f00d';
+  color: #fff;
+
+
+}
+
+.hidden {
+  display: none;
+}
+
+.barLink {
+  position: relative;
+}
+
 /*......CONTENT-LEFT............*/
 .content-left {
   /* display: flex;

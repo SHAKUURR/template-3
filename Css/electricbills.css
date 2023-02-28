@@ -504,3 +504,30 @@ input:checked+.slider:before {
 .slider.round:before {
 	border-radius: 50%;
 }
+
+/*MENU*/
+#menu {
+	font-size: 3rem;
+	margin-bottom: 1.5rem;
+	color: #fff;
+	background-color: #00635d;
+	padding: 1.5rem;
+	display: none;
+	transition: all .2s;
+
+}
+
+
+
+#menu.active:before {
+	content: '\f00d';
+	color: #fff;
+
+
+}
+
+
+
+.hidden {
+	display: none;
+}

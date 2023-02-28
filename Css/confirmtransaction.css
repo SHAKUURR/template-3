@@ -70,8 +70,7 @@ body {
 	display: inline-block;
 }
 
-.nav-item {
-}
+.nav-item {}
 
 .nav-active {
 	background-color: #00635d;
@@ -80,6 +79,7 @@ body {
 	color: #fff;
 	margin-left: -2rem;
 }
+
 .active-link {
 	color: #fff;
 }
@@ -97,8 +97,7 @@ body {
 	margin-right: 2.5rem;
 }
 
-.logout {
-}
+.logout {}
 
 .logout-link {
 	text-decoration: none;
@@ -133,6 +132,7 @@ body {
 	align-items: center;
 	margin-right: 2rem;
 }
+
 .search-input {
 	border: 1.33333px solid #ffffff;
 	padding: 1rem 2rem;
@@ -200,6 +200,7 @@ input:focus {
 	font-weight: 600;
 	color: #1d1d41;
 }
+
 .back-arrow {
 	margin-right: 1rem;
 }
@@ -309,9 +310,11 @@ input:focus {
 .trans-user3 {
 	margin-right: 5rem;
 }
+
 .trans-user4 {
 	margin-right: 6.6rem;
 }
+
 .trans-amount {
 	margin-right: 5rem;
 }
@@ -343,6 +346,7 @@ input:focus {
 	text-decoration: none;
 	border-radius: 5px;
 }
+
 /*......CONTENT-RIGHT............*/
 .content-right {
 	flex: 1;
@@ -426,4 +430,31 @@ input:focus {
 	font-family: "Plus Jakarta Sans", sans-serif;
 	border: none;
 	color: #fff;
+}
+
+/*MENU*/
+#menu {
+	font-size: 3rem;
+	margin-bottom: 1.5rem;
+	color: #fff;
+	background-color: #00635d;
+	padding: 1.5rem;
+	display: none;
+	transition: all .2s;
+
+}
+
+
+
+#menu.active:before {
+	content: '\f00d';
+	color: #fff;
+
+
+}
+
+
+
+.hidden {
+	display: none;
 }

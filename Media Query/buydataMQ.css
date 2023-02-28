@@ -13,8 +13,16 @@
 /*600px*/
 @media only screen and (max-width: 37.5em) {
 
-  .side-bar {
+  /* .sidebarHidden {
     display: none;
+  } */
+
+  .sidebarHidden {
+    display: none;
+  }
+
+  #menu {
+    display: inline-block;
   }
 
   .search-form {
@@ -28,6 +36,12 @@
 
   .content-left {
     margin-right: 0;
+  }
+
+
+
+  #menu {
+    display: inline-block
   }
 
 }

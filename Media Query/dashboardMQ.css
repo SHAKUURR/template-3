@@ -12,9 +12,16 @@
 
 /*600px*/
 @media only screen and (max-width: 37.5em) {
-
   .side-bar {
+    justify-content: space-between;
+  }
+
+  .sidebarHidden {
     display: none;
+  }
+
+  #menu {
+    display: inline-block
   }
 
   .search-form {
