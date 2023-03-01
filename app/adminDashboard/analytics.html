@@ -80,12 +80,15 @@
           <form class="search-form">
             <input type="text" placeholder="Search for anything..." class="search-input">
             <button class="search-button">
-              <img src="../../images/search.png" class="search-image">
+              <i class="fa-solid fa-magnifying-glass search-image"></i>
+              <!-- <img src="../../images/search.png" class="search-image"> -->
             </button>
           </form>
 
           <div class="notification">
-            <img src="../../images/clarity_notification-line.png" class="notify">
+            <i class="fa-sharp fa-regular fa-bell notify"></i>
+
+            <!-- <img src="../../images/clarity_notification-line.png" class="notify"> -->
 
             <img src="../../images/cil_settings.png" class="settings">
           </div>
@@ -116,7 +119,10 @@
                   </select>
                 </div>
               </div>
-              <img src="../../images/analytics (2).png" class="analytics-graph">
+              <div>
+                <canvas id="Chart"></canvas>
+              </div>
+              <!-- <img src="../../images/analytics (2).png" class="analytics-graph"> -->
             </div>
 
           </div>
@@ -210,6 +216,74 @@
 
       // Instantly assign Chart.js version
       const chartVersion = document.getElementById('chartVersion');
+
+      const ctx = document.getElementById('Chart');
+
+
+      new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'],
+          datasets: [{
+            label: 'Outcome',
+            data: [28, 31, 12, 26, 34, 29, 29, 29],
+            backgroundColor: [
+              'rgba(100, 207, 246, 1)',
+              'rgba(100, 207, 246, 1)',
+            ],
+            borderWidth: 1,
+            borderRadius: 80,
+            categoryPercentage: 0.3,
+            barPercentage: 0.6
+          },
+          {
+            label: 'Income',
+            data: [31, 28, 11, 38, 41, 22, 22, 22],
+            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+            borderColor: 'rgba(54, 162, 235, 1)',
+            backgroundColor: [
+              'rgba(90, 81, 212, 1)',
+              'rgba(90, 81, 212, 1)',
+            ],
+            borderWidth: 1,
+            borderRadius: 80,
+            categoryPercentage: 0.3,
+            barPercentage: 0.6
+          }]
+        },
+        options: {
+          scales: {
+            x: {
+              grid: {
+                display: false,
+              },
+
+            },
+            y: {
+              grid: {
+                color: 'rgba(140, 137, 180, 0.5)',
+              },
+              border: {
+                dash: [5, 9],
+              },
+
+              beginAtZero: true,
+              ticks: {
+                callback: function (value, index, values) {
+                  return value + 'k';
+                },
+                stepSize: 10,
+                min: 10,
+                max: 50,
+              },
+            }
+
+          },
+          plugins: {
+            legend: false
+          }
+        }
+      });
     </script>
   </body>
 </html>

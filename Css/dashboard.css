@@ -453,6 +453,8 @@ input,
 .option-icon {
   width: 2rem;
   margin-bottom: 1.5rem;
+  color: #fff;
+  font-size: 2rem;
 }
 
 .cable {
@@ -580,12 +582,18 @@ input,
   background-color: transparent;
   font-family: "Plus Jakarta Sans", sans-serif;
   cursor: pointer;
+  transition: all .2s;
 }
 
 .activity-arrow {
   margin-left: 2rem;
 }
 
+.activity-btn:hover {
+  background-color: #00635d;
+  color: #fff;
+  border: none;
+}
 
 /*MENU*/
 #menu {
@@ -614,4 +622,9 @@ input,
 
 .hidden {
   display: hidden;
+}
+
+
+#chart {
+  width: 20%;
 }
