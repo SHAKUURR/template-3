@@ -70,8 +70,7 @@ body {
   display: inline-block;
 }
 
-.nav-item {
-}
+.nav-item {}
 
 .nav-active {
   background-color: #00635d;
@@ -80,7 +79,32 @@ body {
   color: #fff;
   margin-left: -2rem;
 }
+
 .active-link {
+  color: #fff;
+}
+
+/*DROP DOWN MENU*/
+
+.dropdown {
+  display: none;
+}
+
+.settings:hover .dropdown {
+  background: #6359E9;
+  border-radius: 10px;
+  margin-top: .2rem;
+  display: block;
+  padding: 1rem 2rem;
+}
+
+.dropdown li {
+  list-style: none;
+  padding: .6rem;
+}
+
+.dropdown a {
+  text-decoration: none;
   color: #fff;
 }
 
@@ -97,8 +121,7 @@ body {
   margin-right: 2.5rem;
 }
 
-.logout {
-}
+.logout {}
 
 .logout-link {
   text-decoration: none;
@@ -133,6 +156,7 @@ body {
   align-items: center;
   margin-right: 2rem;
 }
+
 .search-input {
   border: 1.33333px solid #ffffff;
   padding: 1rem 2rem;
@@ -200,6 +224,7 @@ input:focus {
   font-weight: 600;
   color: #1d1d41;
 }
+
 .back-arrow {
   margin-right: 1rem;
 }
@@ -307,6 +332,7 @@ input:focus {
 .delete-2 {
   margin-left: 0.2rem;
 }
+
 /*USER-4*/
 .author-4 {
   margin-right: 12rem;
@@ -316,6 +342,7 @@ input:focus {
 .user-5 {
   margin-bottom: 5rem;
 }
+
 /*......CONTENT-RIGHT............*/
 .content-right {
   flex: 1;
@@ -359,10 +386,12 @@ input:focus {
   transition: all 0.2s;
   padding: 2rem 1.5rem;
 }
+
 .manage-link:hover,
 .manage-list {
   color: #fff;
 }
+
 .manage-item:hover {
   background-color: #172b4d;
   color: #fff;

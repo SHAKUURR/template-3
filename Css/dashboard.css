@@ -50,6 +50,7 @@ body {
   margin-top: 1.5rem;
 }
 
+
 .nav-list {
   list-style: none;
   padding: 1.8rem 0rem;
@@ -81,6 +82,30 @@ body {
 }
 
 .active-link {
+  color: #fff;
+}
+
+/*DROP DOWN MENU*/
+
+.dropdown {
+  display: none;
+}
+
+.settings:hover .dropdown {
+  background: #6359E9;
+  border-radius: 10px;
+  margin-top: .2rem;
+  display: block;
+  padding: 1rem 2rem;
+}
+
+.dropdown li {
+  list-style: none;
+  padding: .6rem;
+}
+
+.dropdown a {
+  text-decoration: none;
   color: #fff;
 }
 
